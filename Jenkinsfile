@@ -1,10 +1,12 @@
 node{
-	stage('git'){
+	stage('git')
+	{
 		// git clone
 		git 'https://github.com/tambesagar28/game-of-life.git'
 	}
-	stage('build the code'){
+	stage('build the code')
+	{
 		// Buliding the code using sh
-		build 'gameoflife'
+		mvn 'package'
 	}
 }
