@@ -9,4 +9,8 @@ node{
 		// Buliding the code using sh
 		sh 'mvn package'
 	}
+	stage('archival')
+	{
+		archive 'gameoflife-web / target/*.jar'
+	}
 }
