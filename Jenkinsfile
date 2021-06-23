@@ -7,6 +7,6 @@ node{
 	stage('build the code')
 	{
 		// Buliding the code using sh
-		mvn 'package'
+		sh 'mvn package'
 	}
 }
